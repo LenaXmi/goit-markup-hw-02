@@ -1,0 +1,122 @@
+:root {
+  --main-background-color: #ffffff;
+  --main-text-color: #000000;
+  --main-accent-color: #2196f3;
+  --secondary-text-color: #757575;
+}
+body {
+  background-color: turquoise;
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+}
+/* Site header */
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--main-accent-color);
+}
+.site-nav a {
+  color: var(--main-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--main-accent-color);
+}
+.site-nav .current-link {
+  color: var(--main-accent-color);
+}
+.contact-phone a,
+.contact-link a {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.contact-link a:hover,
+.contact-link a:focus {
+  color: var(--main-accent-color);
+}
+.contact-phone a:hover,
+.contact-phone a:focus {
+  color: var(--main-accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Filter buttons */
+.filters button:hover,
+.filters button:focus {
+  color: var(--main-accent-color);
+}
+.filters button {
+  color: var(--main-text-color);
+  border-color: #f5f4fa;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Product cards */
+.product {
+  color: var(--main-text-color);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+}
+.description {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+/* Footer */
+.footer-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--main-accent-color);
+}
+.main-address {
+  color: #ffffff;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.main-address:hover,
+:focus {
+  color: var(--main-accent-color);
+}
