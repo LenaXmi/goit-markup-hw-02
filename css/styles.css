@@ -4,55 +4,82 @@
   --main-accent-color: #2196f3;
   --secondary-text-color: #757575;
 }
+
 body {
-  background-color: turquoise;
+  background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: Roboto, sans-serif;
 }
+
 /* Site header */
+
 .logo {
+  color: var(--main-text-color);
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
+
 .logo:hover,
-.logo:focus {
+:focus {
   color: var(--main-accent-color);
 }
+
+span {
+  color: var(--main-accent-color);
+}
+
+span.second-half {
+  color: var(--main-background-color);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .site-nav a {
   color: var(--main-text-color);
-
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
+
 .site-nav a:hover,
-.site-nav a:focus {
+:focus {
   color: var(--main-accent-color);
 }
+
 .site-nav .current-link {
   color: var(--main-accent-color);
 }
-.contact-phone a,
-.contact-link a {
-  color: var(--secondary-text-color);
 
-  font-style: normal;
+.header-contacts a {
+  color: var(--secondary-text-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
+  text-decoration: none;
 }
-.contact-link a:hover,
-.contact-link a:focus {
+
+.header-contacts a:hover,
+:focus {
   color: var(--main-accent-color);
 }
-.contact-phone a:hover,
-.contact-phone a:focus {
-  color: var(--main-accent-color);
-}
+
+/* Hidden heading */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,63 +87,76 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Filter buttons */
+
 .filters button:hover,
 .filters button:focus {
   color: var(--main-accent-color);
 }
 .filters button {
   color: var(--main-text-color);
-  border-color: #f5f4fa;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-/* Product cards */
-.product {
-  color: var(--main-text-color);
 
-  font-style: normal;
-  font-weight: bold;
+/* Product cards */
+
+.product {
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
+
 .description {
   color: var(--secondary-text-color);
-
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
-/* Footer */
-.footer-contacts a {
-  color: rgba(255, 255, 255, 0.6);
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-}
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  color: var(--main-accent-color);
+/* Footer */
+
+footer {
+  background-color: #2f303a;
 }
 .main-address {
   color: #ffffff;
-
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
+
 .main-address:hover,
+:focus {
+  color: var(--main-accent-color);
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-contacts:hover,
 :focus {
   color: var(--main-accent-color);
 }
