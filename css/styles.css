@@ -23,11 +23,6 @@ body {
   text-decoration: none;
 }
 
-.logo:hover,
-:focus {
-  color: var(--main-accent-color);
-}
-
 span {
   color: var(--main-accent-color);
 }
@@ -56,7 +51,7 @@ ul {
 }
 
 .site-nav a:hover,
-:focus {
+.site-nav a:focus {
   color: var(--main-accent-color);
 }
 
@@ -74,7 +69,7 @@ ul {
 }
 
 .header-contacts a:hover,
-:focus {
+.header-contacts a:focus {
   color: var(--main-accent-color);
 }
 
@@ -132,6 +127,7 @@ ul {
 footer {
   background-color: #2f303a;
 }
+
 .main-address {
   color: #ffffff;
   font-style: normal;
