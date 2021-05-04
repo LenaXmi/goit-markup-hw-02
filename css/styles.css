@@ -42,7 +42,7 @@ ul {
 
 .site-nav a {
   color: var(--main-text-color);
-  font-family: inherit;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -61,7 +61,7 @@ ul {
 
 .header-contacts a {
   color: var(--secondary-text-color);
-  font-family: inherit;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -92,10 +92,12 @@ ul {
 
 .filters button:hover,
 .filters button:focus {
-  color: var(--main-accent-color);
+  color: var(--main-background-color);
+  background-color: var(--main-accent-color);
 }
 .filters button {
   color: var(--main-text-color);
+  background-color: #f5f4fa;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
