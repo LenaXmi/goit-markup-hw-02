@@ -3,6 +3,7 @@
   --main-text-color: #000000;
   --main-accent-color: #2196f3;
   --secondary-text-color: #757575;
+  --page-background-color: #2f303a;
 }
 
 body {
@@ -31,6 +32,8 @@ span.second-half {
   color: var(--main-background-color);
 }
 
+/* Hidden elements */
+
 li {
   list-style: none;
 }
@@ -39,6 +42,21 @@ ul {
   margin-left: 0;
   padding-left: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Page navigation */
 
 .site-nav a {
   color: var(--main-text-color);
@@ -59,6 +77,8 @@ ul {
   color: var(--main-accent-color);
 }
 
+/* Contacts top */
+
 .header-contacts a {
   color: var(--secondary-text-color);
 
@@ -73,22 +93,38 @@ ul {
   color: var(--main-accent-color);
 }
 
-/* Hidden heading */
+/* Studio main title */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.hero-title {
+  color: var(--main-background-color);
+  background-color: var(--page-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* Filter buttons */
+/* Studio order button */
+
+.order {
+  background-color: var(--main-accent-color);
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order:hover {
+  background-color: var(--main-accent-color);
+  color: var(--main-background-color);
+}
+
+/* Portfolio filter buttons */
 
 .filters button:hover,
 .filters button:focus {
@@ -107,7 +143,56 @@ ul {
   cursor: pointer;
 }
 
-/* Product cards */
+/* Studio features */
+
+.feature-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Studio works */
+
+.our-works-title {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Studio team */
+
+.employee {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+}
+
+.position {
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio product cards */
 
 .product {
   font-weight: 700;
@@ -124,10 +209,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/* Footer */
+/* Contacts bottom */
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--page-background-color);
 }
 
 .main-address {
